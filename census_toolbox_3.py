@@ -2,7 +2,7 @@ import random
 login_no = random.randint(1,25)
 
 counter = 0
-while counter < 4:
+while counter < 3:
     counter += 1
 
     guess_login_no = int(input("Enter a number:"))
@@ -23,7 +23,7 @@ while counter < 4:
         print("InVaLiD PaSsCoDe")
         counter -= 1
 
-while counter >= 4:
+while counter >= 3:
     counter += 1
 
     guess_login_no = int(input("Enter a number:"))
