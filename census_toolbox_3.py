@@ -19,7 +19,7 @@ while counter < 3:
         print("INVALID PASSCODE")
         
 
-    elif guess_login_no < login_no+2 and guess_login_no > login_no-2:
+    elif guess_login_no <= login_no+2 and guess_login_no >= login_no-2:
         print("InVaLiD PaSsCoDe")
         counter -= 1
 
@@ -28,8 +28,12 @@ while counter >= 3:
 
     guess_login_no = int(input("Enter a number:"))
     
+    if guess_login_no == login_no:
+        print("Welcome!!!")
+        break
+    
 
-    if guess_login_no < login_no-2:
+    elif guess_login_no < login_no-2:
         print("LOGIN FAILED!!!")
         break
     
@@ -39,13 +43,10 @@ while counter >= 3:
         break
     
 
-    elif guess_login_no < login_no+2 and guess_login_no > login_no-2:
+    elif guess_login_no <= login_no+2 and guess_login_no >= login_no-2:
        print("LOGIN FAILED!!!")
        break
 
-    elif guess_login_no == login_no:
-        print("Welcome!!!")
-        break
     
 
     
