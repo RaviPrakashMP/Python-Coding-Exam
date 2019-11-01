@@ -24,8 +24,7 @@ while counter < 3:
         counter -= 1
 
 while counter >= 3:
-    counter += 1
-
+    
     guess_login_no = int(input("Enter a number:"))
     
     if guess_login_no == login_no:
